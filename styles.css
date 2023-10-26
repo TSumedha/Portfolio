@@ -484,6 +484,7 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
 @keyframes colorChange {
     0%   { border-top-color: red; }
     25%  { border-top-color: yellow; }
