@@ -492,20 +492,14 @@ footer {
     100% { border-top-color: red; }
 }
 
-body {
-    border-top: 15px solid red; /* Initial border color */
-    animation: colorChange 10s infinite; /* Applying the animation */
+@keyframes glowEffect {
+    0%   { box-shadow: 0 -10px 10px red; }
+    50%  { box-shadow: 0 -10px 10px blue; }
+    100% { box-shadow: 0 -10px 10px red; }
 }
-
-
-@keyframes rippleEffect {
-    0%   { box-shadow: 0 -10px 0px 0px red, 0 -20px 10px 0px yellow; }
-    50%  { box-shadow: 0 -20px 0px 0px yellow, 0 -30px 10px 0px blue; }
-    100% { box-shadow: 0 -30px 0px 0px blue, 0 -40px 10px 0px green; }
-}
-
 body {
-    animation: rippleEffect 5s infinite;
+    border-top: 15px solid red;
+    animation: colorChange 10s infinite, glowEffect 5s infinite;
 }
 
 /* Responsive adjustments */
