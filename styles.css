@@ -484,6 +484,29 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+@keyframes colorChange {
+    0%   { border-top-color: red; }
+    25%  { border-top-color: yellow; }
+    50%  { border-top-color: blue; }
+    75%  { border-top-color: green; }
+    100% { border-top-color: red; }
+}
+
+body {
+    border-top: 15px solid red; /* Initial border color */
+    animation: colorChange 10s infinite; /* Applying the animation */
+}
+
+@keyframes glowEffect {
+    0%   { box-shadow: 0 -10px 10px red; }
+    50%  { box-shadow: 0 -10px 10px blue; }
+    100% { box-shadow: 0 -10px 10px red; }
+}
+
+body {
+    animation: glowEffect 5s infinite;
+}
+
 
 /* Responsive adjustments */
 /* Media query to adjust styles for narrower screens or devices */
