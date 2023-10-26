@@ -484,7 +484,6 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
-
 @keyframes colorChange {
     0%   { border-top-color: red; }
     25%  { border-top-color: yellow; }
@@ -497,6 +496,7 @@ body {
     border-top: 15px solid red; /* Initial border color */
     animation: colorChange 10s infinite; /* Applying the animation */
 }
+
 
 @keyframes rippleEffect {
     0%   { box-shadow: 0 -10px 0px 0px red, 0 -20px 10px 0px yellow; }
