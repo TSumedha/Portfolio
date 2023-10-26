@@ -1,0 +1,517 @@
+/* Importing necessary fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400&display=swap');
+
+/* Resetting margin and padding for all elements for consistent spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the sidebar */
+.sidebar {
+    position: absolute;
+    background-color: rgb(155, 148, 148);
+    font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    /* Smooth transition for sidebar movement */
+}
+
+/* Styling for the navigation inside the sidebar */
+.sidebar nav {
+    padding: 60px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    /* Removing bullet points for list items */
+    font-size: 25px;
+    padding: 30px 0;
+}
+
+/* Removing underlines from links and setting their color */
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Styling for the main content section */
+.main {
+    width: 400vw;
+    /* Setting a very large width, perhaps for horizontal scrolling */
+    padding: 23px;
+    flex-wrap: wrap;
+    /* Allowing flex items to wrap to the next line if necessary */
+}
+
+/* The main container that houses both the sidebar and main content. Setting it to display flex for horizontal layout */
+.container {
+    display: flex;
+}
+
+/* Styling for the container holding the developer's information */
+.infoContainer {
+    height: 40vh;
+    width: 80vw;
+    margin: 144px auto;
+    /* Centering the container with auto margins */
+    display: flex;
+    /* Using flexbox for layout */
+    justify-content: space-around;
+    /* Evenly distributing space around flex items */
+}
+
+/* Specific styles for the text-based info about the developer */
+.devInfo {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    /* Centering items along the horizontal axis */
+    flex-direction: column;
+    /* Setting direction of flex items to column (vertical) */
+    margin-left: 40px;
+    /* Adding a left margin for spacing *8/
+    font-family: 'Source Code Pro', monospace;
+    /* Specifying font */
+}
+
+/* Various font size adjustments for different parts of the developer's introduction */
+.hello {
+    font-size: 2.5em;
+}
+
+.name {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 2.2em;
+}
+
+.moreabout {
+    font-size: 2em;
+    margin-top: 38px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Styling for the two buttons - Download CV and Contact Me */
+.buttons {
+    margin-top: 45px;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    /* Setting the primary color of the button */
+    font-weight: bold;
+    font-size: 1.9em;
+    margin: 3px 9px;
+    cursor: pointer;
+    /* Changing cursor to pointer on hover */
+}
+
+/* Making the button smaller */
+.btn-sm {
+    font-size: 22px;
+    padding: 8px 15px;
+    margin: 12px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-sm:hover {
+    transform: scale(1.1);  /*enlarge the button a bit when hovered*/
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);  /* add a shadow on hover*/
+}
+
+
+/* Styling for button hover effects */
+.btn:hover {
+    background-color: white;
+    /* Inverting colors on hover */
+    color: dodgerblue;
+}
+
+/* Styling for the developer's picture */
+.devPic img {
+    height: 64vh;
+}
+
+/* Styles for the contact form */
+.contactform {
+    padding: 0 80px;
+    padding-top: 35px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 30px;
+    /* Specifying margin for spacing */
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Defining styles for the individual input fields inside the contact form */
+.contactform form div {
+    padding: 12px 0;
+    /* Vertical spacing for form fields */
+    display: flex;
+    /* Using flexbox for layout */
+    flex-direction: column;
+    /* Arranging form fields vertically */
+    font-size: 1em;
+    font-weight: 800;
+}
+
+/* More specific styles for the input elements in the form */
+.contactform form div input {
+    border-radius: 5px;
+    /* Rounding the corners of the input fields */
+    margin: 6px 0 0 0;
+    /* Specifying margin */
+    padding: 4px;
+    /* Inner padding for input fields */
+}
+
+/* Styling the help text below the email and phone input fields */
+#emailHelp {
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+/* Styling for the form's checkbox item */
+#form-check {
+    flex-direction: row;
+    /* Making the checkbox and its label appear side-by-side */
+}
+
+#form-check input {
+    width: 24px;
+    /* Specifying width of the checkbox */
+    margin: 3px 0;
+}
+
+/* Styling individual blog items */
+.blogItem {
+    margin: 40px;
+    /* Vertical spacing for blog items */
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Styling the main blog container */
+.blogContainer {
+    margin: 88px;
+    /* Vertical spacing for blog container */
+}
+
+/* Styling headers and paragraphs */
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 14 px;
+    /* Vertical spacing for headers */
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 18px;
+    font-weight:800px;
+    
+}
+
+/* Styling for the introduction section */
+.intro {
+    margin: 22px;
+    /* Vertical spacing for intro section */
+    color: #333;
+}
+
+/* Specific font styling for headers and paragraphs inside the introduction */
+.intro h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 22px;
+    /* Vertical spacing for headers inside intro */
+    padding-left: 15px;
+}
+
+.skillContainer h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 15px;
+
+}
+
+.projectContainer h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 15px;
+}
+
+.intro p {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 22px;
+    /* Vertical spacing for paragraphs inside intro */
+    padding-left: 15px;
+    font-weight: 800px;
+}
+
+/* Styling for the skills container */
+.skillContainer {
+    font-family: 'Fira Sans', sans-serif;
+    padding-left: 15px;
+    /* Padding around the skills container */
+    margin: 22px;
+    font-weight: 800px;
+    
+}
+
+.projectContainer ul li {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 15px;
+    margin-bottom: 2px;
+    font-weight: 800px;
+}
+
+
+
+/* Styles for individual skill items */
+.skillItem {
+    display: flex;
+    /* Using flexbox for layout */
+    align-items: center;
+    /* Vertically aligning items to the center */
+    padding: 10px;
+    /* Spacing around skill items */
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 800;
+    /* Making font bolder */
+}
+
+/* Defining the base styling for the skills bar */
+.skill {
+    width: 265px;
+    height: 6px;
+    /* Height of the skills bar */
+    background-color: red;
+    border: 2px solid black;
+}
+
+/* Specific color coding for different levels of skills */
+.hundred {
+    width: 100%;
+    background-color: blueviolet;
+    /* Color for 100% skills */
+}
+
+.fifty {
+    width: 50%;
+    background-color: aqua;
+    /* Color for 50% skills */
+}
+
+.t5 {
+    width: 25%;
+    background-color: yellow;
+    /* Color for 25% skills */
+}
+
+/* Styles that control the movement of the sidebar */
+.sidebarGo {
+    transform: translate(-643px, 0px);
+    /* Moving the sidebar out of view */
+    position: absolute;
+}
+
+/* Styling the hamburger icon and its positioning */
+.hamburger {
+    position: absolute;
+    /* Absolute positioning for the hamburger */
+    cursor: pointer;
+    /* Changing cursor to pointer on hover */
+    top: 10px;
+    /* Positioning from the top */
+    left: 10px;
+    /* Positioning from the left */
+}
+
+/* Positioning the individual icons within the hamburger menu */
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross {
+    margin-left: 205px;
+    /* Pushing the cross icon to the right */
+}
+
+.service h1 {
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 40px;
+    margin-left: 42px;
+    padding: 2px;
+}
+
+
+.service h2 {
+
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 42px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+.service p {
+    font-size: 18px;
+    font-weight: 400px;
+    margin-left: 42px;
+    padding: 2px;
+    font-family: 'Source Code Pro', monospace;
+    /* Specifying font */
+    color: #333;
+}
+
+.cta h1 {
+
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 40px;
+    margin-left: 42px;
+    padding: 2px;
+
+}
+
+.cta h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 42px;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.cta p {
+    font-size: 18px;
+    font-weight: 400px;
+    margin-left: 42px;
+    padding: 2px;
+    font-family: 'Source Code Pro', monospace;
+    /* Specifying font */
+    color: #333;
+
+}
+
+.cta .btn {
+    /* Add your styles for the button here */
+    padding: 4px 10px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    /* Setting the primary color of the button */
+    font-weight: bold;
+    font-size: 2em;
+    margin: 30px 39px;
+    cursor: pointer;
+    /* Changing cursor to pointer on hover */
+}
+
+/*  A hover effect for the button */
+.cta .btn:hover {
+    background-color: white;
+    /* Inverting colors on hover */
+    color: dodgerblue;
+}
+.devPic {
+    display: block;
+}
+
+/* Global footer styles */
+footer {
+    background-color: #333;
+    color: #eee;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h2 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #eee;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #444;
+    color: #ddd;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+/* Media query to adjust styles for narrower screens or devices */
+@media(max-width:800px) {
+    .devPic {
+        display: none; 
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    footer {
+        display: none;
+    }
+    .buttons {
+        font-size: 6px;
+        /* Reducing font size for buttons */
+    }
+
+    .devInfo {
+        font-size: 10px;
+        /* Reducing font size for developer info */
+    }
+
+    .intro,
+    .blogContainer,
+    .contactform {
+        margin: 40px 8px;
+        /* Adjusting margin for various sections */
+    }
+
+}

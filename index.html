@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8"> <!-- Character encoding specification -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility mode for IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting viewport for responsiveness -->
+    <title>Josh - Web Developer, Programmer, ML Anthusiast</title> <!-- Webpage title -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external stylesheet -->
+</head>
+
+<body>
+    <!-- Main container for webpage content -->
+    <div class="container">
+        
+        <!-- Sidebar for navigation -->
+        <div class="sidebar sidebarGo">
+            <nav> <!-- Navigation section -->
+                <ul> <!-- List of navigation links -->
+                    <!-- Various navigation items and their respective links -->
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main content section -->
+        <div class="main">
+
+            <!-- Hamburger menu for mobile navigation -->
+            <div class="hamburger">
+                <img class="ham" src="Images/ham.png" alt="Hamburger Menu" width="23"> <!-- Hamburger menu icon -->
+                <img class="cross" src="Images/cross.png" alt="Close Menu" width="23"> <!-- Close menu icon -->
+            </div>
+
+            <!-- Container for developer introduction and related content -->
+            <div class="infoContainer">
+                
+                <!-- Detailed developer information -->
+                <div class="devInfo">
+                    <div class="hello">Hello, World! I'm</div> <!-- Greeting -->
+                    <div class="name">Josh Halliday</div> <!-- Developer's name -->
+                    <div class="about">Web Developer | Tech Innovator | Dance Enthusiast</div> <!-- Short about info -->
+                    <div class="moreabout">With a passion for coding and an eye for design, I create dynamic web solutions that captivate users. My love for coffee is only rivaled by my drive to innovate and transform ideas into reality. Outside of the tech realm, dance allows me to express myself and find balance in life.</div> <!-- More detailed about info -->
+
+                    <!-- Action buttons for downloading CV and contacting -->
+                    <div class="buttons">
+                        <!-- Display message when CV button is clicked -->
+                        <button class="btn" onclick="displayMessage()">Download CV</button>
+                        
+                        <!-- Link to contact page -->
+                        <a href="/contact.html">
+                            <button class="btn">Contact Me</button>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <!-- Developer's picture -->
+                <div class="devPic">
+                    <img src="Images/dev.png" alt="Developer Picture"> 
+                </div>
+
+            </div> <!-- End of infoContainer -->
+
+        </div> <!-- End of main content section -->
+
+    </div> <!-- End of main container -->
+
+    <!-- Linking external JavaScript for interactivity -->
+    <script src="script.js"></script>
+
+</body>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/services.html">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h2>Contact Info</h2>
+            <p>Email: josh@example.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2023 Josh Halliday | Designed by Josh
+    </div>
+</footer>
+
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8"> <!-- Character encoding specification -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- For compatibility with older versions of IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsive design -->
+    <title>Josh - Web Developer, Programmer, ML Anthusiast</title> <!-- Webpage title -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS stylesheet -->
+</head>
+
+<body>
+    <!-- Main container for the content -->
+    <div class="container">
+        
+        <!-- Navigation sidebar -->
+        <div class="sidebar sidebarGo">
+            <nav> <!-- Navigation menu -->
+                <ul> <!-- List for navigation items -->
+                    <!-- Navigation links -->
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/intro.html">My Intro</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Main content section -->
+        <div class="main">
+
+            <!-- Hamburger menu icons for mobile view -->
+            <div class="hamburger">
+                <img class="ham" src="Images/ham.png" alt="Hamburger Menu Icon" width="23"> 
+                <img class="cross" src="Images/cross.png" alt="Close Icon" width="23">
+            </div>
+            
+            <!-- Contact form section -->
+            <div class="contactform">
+                <h1>Contact me for Work/General Enquiries</h1>
+                
+                <!-- The actual form -->
+                <form id="contactForm">
+                    <!-- Name input -->
+                    <div class="mb-3">
+                        <label for="clientmail" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="clientname" required>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="mb-3">
+                        <label for="clientemail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+
+                    <!-- Phone input -->
+                    <div class="mb-3">
+                        <label for="clientphone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="clientphone" required>
+                        <div class="form-text">We'll never share your phone with anyone else.</div>
+                    </div>
+
+                    <!-- Enquiry input -->
+                    <div class="mb-3">
+                        <label for="clientenquiry" class="form-label">Enquiry</label>
+                        <input type="text" class="form-control" id="clientenquiry">
+                    </div>
+
+                    <!-- Checkbox to indicate client's interest in working on a project -->
+                    <div class="mb-3" id="form-check">
+                        <input type="checkbox" class="form-check-input" id="isclient">
+                        <label class="form-check-label" for="isclient">I want you to work on a project with me</label>
+                    </div>
+
+                    <!-- Submit button for the form -->
+                    <button type="submit" class="btn btn-sm">Submit</button>
+                </form>
+
+            </div> <!-- End of contact form section -->
+
+        </div> <!-- End of main content section -->
+
+    </div> <!-- End of main container -->
+
+    <!-- Link to the external JavaScript file for interactivity -->
+    <script src="script.js"></script>
+
+</body>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog.html">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/services.html">Services</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h2>Contact Info</h2>
+            <p>Email: josh@example.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2023 Josh Halliday | Designed by Josh
+    </div>
+</footer>
+
+
+</html>
